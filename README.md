@@ -1,50 +1,63 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# The Kingdom Comes Global Worship 2023
 
-> Description the project.
+> This is a project for my first capstone project which is about the Worship Conference.
 
 
 ## Built With
 
 - Major languages
-- Frameworks
-- Technologies used
+   * HTML
+   * CSS
+   * JS
+
+- Technologies used:
+    * Git
+    * GitHub
+    * Vs code
+    
 
 ## Live Demo (if available)
 
 [Live Demo Link](https://livedemo.com)
 
 
-## Getting Started
+### To get a local copy up and running
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+> Follow these simple example steps:
 
+  1. Locate the project folder in the Repository.
+  2. Click on the code button and dowload a zip file for the project locally.
+  3. Locate the index.html file and double click it to view webpage.
 
-To get a local copy up and running follow these simple example steps.
+### Prerequisites:
 
-### Prerequisites
+  * Node.js as prerequisites for npm installation
+  * install node package manager(npm): npm helps to install stylelint.
+  * stylelint for debuging code
+  * Any browser of your choice to display the webpage contents.
+
 
 ### Setup
-
-### Install
+> Download and install browser.
 
 ### Usage
+> Navigate through the web page to find the information you need. Use the links in the pages to move to different sections.
 
-### Run tests
 
 ### Deployment
+> Project reside in this Repository. You can clone the repo or download the files manually to your local machine.
 
 
 
 
 
-👤 **Author**
-
-- GitHub: [@githubhandle](https://github.com/AlierPM)
-- Twitter: [@twitterhandle](https://twitter.com/AlierPM)
-- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/alier-philip-maguet-b11653203/)
+## Authors
+:bust_in_silhouette: **Alier Philip Maguet**
+- GitHub: [@AlierPM](https://github.com/AlierPM)
+- Twitter: [@AlierPM](https://twitter.com/AlierPM)
+- LinkedIn: [@AlierPM](https://www.linkedin.com/in/alier-philip-maguet-b11653203/)
 
 
 ## 🤝 Contributing
