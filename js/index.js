@@ -47,7 +47,7 @@ const speakers = [
   {
     name: 'Musa John',
     gift: 'President of Musa John Music-South Sudan',
-    bio: 'A Gospel artist with a different full of the Holy Ghost',
+    bio: 'A Gospel artist with a difference; full of the Holy Ghost',
     image: '../images/Musa-John.png',
   },
   {
