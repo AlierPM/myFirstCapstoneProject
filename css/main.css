@@ -315,6 +315,10 @@ i {
     color: rgba(255, 255, 255, 0.76);
   }
 
+  .secondary-navbar li {
+    color: rgba(255, 255, 255, 0.76);
+  }
+
   .headline {
     padding-left: 7rem;
     background: url('/images/homepage-bg.png');
