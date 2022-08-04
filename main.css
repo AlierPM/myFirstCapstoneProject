@@ -183,7 +183,7 @@ i {
 }
 
 .about.headline {
-  background: url('/images/about-dektop.png');
+  background: url('./images/about-dektop.png');
   background-repeat: no-repeat;
   background-size: contain;
   align-items: center;
@@ -269,7 +269,7 @@ i {
   position: relative;
   justify-content: center;
   padding: 2em;
-  background: url('/images/homepage-bg.png');
+  background: url('./images/homepage-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -320,7 +320,7 @@ i {
 
   .headline {
     padding-left: 7rem;
-    background: url('/images/homepage-bg.png');
+    background: url('./images/homepage-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
