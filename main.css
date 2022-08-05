@@ -25,6 +25,8 @@ body {
   font-family: var(--primary-font);
   color: var(--primary-color);
   overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--secondary-color);
 }
 
 a {
@@ -68,16 +70,36 @@ i {
 
 .primary-navbar {
   width: 100%;
-  background-color: white;
+  background-color:var(--secondary-color);
   justify-content: space-between;
   align-items: center;
   padding: 1em 10%;
   position: relative;
 }
 
+@media (min-width:768px) {
+  .primary-navbar {
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 10%;
+    position: relative;
+  }
+}
+
 .logo {
   max-width: 250px;
   max-height: 100px;
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  .logo {
+    max-width: 250px;
+    max-height: 100px;
+    display: block;
+  }
 }
 
 .nav-menu {
@@ -132,7 +154,7 @@ i {
   }
 
   .nav-menu.slide {
-    left: 0;
+   left: 0;
   }
 
   @supports (backdrop-filter: blur(5rem)) {
@@ -154,6 +176,7 @@ i {
     row-gap: 4px;
     cursor: pointer;
     display: flex;
+    justify-content: right;
   }
 
   .hamburger .line {
@@ -207,6 +230,7 @@ i {
   font-size: 0.8rem;
   line-height: 1.6;
   text-align: center;
+  width: 100%;
   max-width: 768px;
 }
 
@@ -265,39 +289,65 @@ i {
 .headline {
   flex-direction: column;
   width: 100%;
-  height: 70vh;
   position: relative;
   justify-content: center;
   padding: 2em;
   background: url('./images/homepage-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden
 }
 
 .headline-content {
   flex-direction: column;
   row-gap: 1rem;
   width: 100%;
-  max-width: 450px;
+  /* max-width: 450px; */
 }
 
 .headline-content h1 {
   font-size: 2.5rem;
   color: var(--accent-color);
-  line-height: 3.5rem;
+  line-height: 4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media (min-width:768px) {
+  .headline-content h1 {
+    line-height: 3.5rem;
+    font-weight: 700;
+  }
 }
 
 .headline-content .text {
-  border: 2px solid rgba(255, 255, 255, 0.575);
-  background: rgba(247, 247, 247, 0.76);
+  border: 5px solid #fff;
+  background: var(--secondary-color);
   padding: 1.5em;
   font-size: 14px;
-  line-height: 1.2rem;
+  line-height: 1rem;
+  font-weight: 400;
+  width: fit-content;
+}
+
+.theme-book {
+  color: var(--accent-color);
+}
+
+.glory {
+  color: var(--accent-color);
+  font-size: 16px;
+  font-weight:500;
+  padding-top: 2rem;
 }
 
 @media screen and (min-width: 768px) {
   .about.headline {
     padding-left: 0;
+  }
+
+  .about.headline .glory {
+    display: none;
   }
 
   .about-info p {
@@ -342,6 +392,8 @@ i {
 
   .headline-content .text {
     padding: 0.5em;
+    line-height: 1.2rem;
+    font-weight: 700;
   }
 
   .date {
@@ -354,6 +406,9 @@ i {
 
   .date p {
     font-size: 0.8rem;
+    line-height: 1.6;
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -415,7 +470,7 @@ i {
   color: var(--accent-color);
 }
 
-.card .tag-detail {
+.card .info {
   font-size: 14px;
   line-height: 1rem;
 }
@@ -517,6 +572,7 @@ i {
 }
 
 .speaker-details {
+  width: 100%;
   max-width: 300px;
 }
 
@@ -552,33 +608,77 @@ i {
 }
 
 /* === PARTNER === */
-.partner {
+.partner-index {
+  display: none;
+} 
+
+
+@media (min-width:768px) {
+ 
+  .partner-about {
+    display: none !important;
+  }
+
+  .partner-index {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #444547;
+    margin-top: 2rem;
+    padding: 4em 1rem;
+  } 
+
+  .partner-index .sponsors {
+    display: flex;
+    width: 100%;
+    max-width: 250px;
+    max-height: 150px;
+    opacity: 0.6;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+.partner-about {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: #444547;
   margin-top: 2rem;
   padding: 4em 1rem;
 }
 
+.partner-about .sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  max-width: 109px;
+  max-height: 75px;
+}
+
 .partner .caption {
   color: rgba(255, 255, 255, 0.582);
 }
 
-.partner-logo {
-  justify-content: center;
+.partner-logo-about {
+  display: flex;
   align-items: center;
-  column-gap: 4rem;
-  row-gap: 2rem;
-  max-width: 768px;
   flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-.partner-logo .sponsors {
   opacity: 0.6;
   transition: 0.5s ease-in-out;
 }
 
-.partner-logo img:hover {
+.partner-logo-about img:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+.partner-logo-index .sponsors {
+  opacity: 0.6;
+  transition: 0.5s ease-in-out;
+}
+
+.partner-logo-index img:hover {
   opacity: 1;
   transform: scale(1.3);
 }
@@ -624,31 +724,87 @@ i {
 }
 
 /* === FOOTER === */
-.footer {
-  width: 100%;
-  padding: 4em 1em;
-  column-gap: 3rem;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0 auto;
+
+.footer-index {
+  display: none;
 }
 
-.footer.about {
-  background-color: rgba(0, 0, 0, 0.87);
-  width: 100%;
-  color: white;
-}
+@media  (min-width:768px) {
+  .footer-index {
+    display: flex;
+  
+  }
 
+  .footer-index .footer {
+    width: 100%;
+    padding: 4em 1em;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+  }
+
+  
 .footer .footer-info {
-  width: 30ch;
+  width: 46%;
   color: rgba(39, 37, 37, 0.767);
   line-height: 1.7;
   letter-spacing: 0.02rem;
 }
 
-.footer.about p {
-  color: rgba(255, 255, 255, 0.911);
+  #myBtn {
+    display: block;
+  }
 }
+
+.footer-about .footer { 
+    width: 100%;
+    padding: 4em 1em;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+footer.about p {
+  background-color: var(--primary-color);
+  width: 100%;
+  color: rgba(39, 37, 37, 0.767);
+  line-height: 1.7;
+  letter-spacing: 0.02rem;
+
+}
+
+
+@media  (min-width:768px) {
+  .footer-about .footer {
+    width: 100%;
+    padding: 4em 1em;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+  }
+
+  .footer.about p {
+  width: 46%;
+  color: var(--secondary-color);
+  line-height: 1.7;
+  letter-spacing: 0.02rem;
+}
+
+}
+
+.footer.about.footer .footer-info {
+  width: 46%;
+  color: rgba(39, 37, 37, 0.767);
+  line-height: 1.7;
+  letter-spacing: 0.02rem;
+}
+
 
 @media screen and (min-width: 768px) {
   .events {
