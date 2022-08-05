@@ -73,7 +73,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-[The Kingdome Comes website](https://alierpm.github.io/thekingdomcomes.github.io/index.html)
+- [The Design is attributed to Cindy Shin ](https://www.behance.net/adagio07)
 
 ## 📝 License
 
