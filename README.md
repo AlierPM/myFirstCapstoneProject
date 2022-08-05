@@ -73,7 +73,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [The Design is attributed to Cindy Shin ](https://www.behance.net/adagio07)
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
 ## 📝 License
 
