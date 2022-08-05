@@ -70,11 +70,15 @@ i {
 
 .primary-navbar {
   width: 100%;
-  background-color: var(--secondary-color);
+  background-color: #efefef;
   justify-content: space-between;
   align-items: center;
   padding: 1em 10%;
   position: relative;
+}
+
+.primary-navbar.about {
+background-color: #d3d3d3;
 }
 
 @media (min-width: 768px) {
@@ -86,6 +90,10 @@ i {
     padding: 1em 10%;
     position: relative;
   }
+
+  .primary-navbar.about {
+    background-color: #fff;
+    }
 }
 
 .logo {
