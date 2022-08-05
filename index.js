@@ -61,7 +61,7 @@ const speakers = [
     gift: 'An Apostle of Worship',
     bio: 'A man who break the cages and chain of demoinic schemics with his Holy Ghost chant',
     image: './images/Theopilus.png',
-  }
+  },
 ];
 
 function createSpeakers() {
