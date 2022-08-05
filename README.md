@@ -18,9 +18,9 @@
     * Vs code
     
 
-## Live Demo (if available)
+## Live Demo (Vist the website by clicking the link below)
 
-[Live Demo Link](https://livedemo.com)
+[The Kingdome Comes website](https://alierpm.github.io/thekingdomcomes.github.io/index.html)
 
 
 ### To get a local copy up and running
@@ -72,9 +72,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- [The Design is attributed to Cindy Shin ](https://www.behance.net/adagio07)
+
 
 ## 📝 License
 
