@@ -18,9 +18,10 @@
     * Vs code
     
 
-## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+## Live Demo (Vist the website by clicking the link below)
+
+[The Kingdome Comes website](https://alierpm.github.io/thekingdomcomes.github.io/index.html)
 
 
 ### To get a local copy up and running
@@ -72,9 +73,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+[The Kingdome Comes website](https://alierpm.github.io/thekingdomcomes.github.io/index.html)
 
 ## 📝 License
 
