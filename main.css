@@ -78,7 +78,7 @@ i {
 }
 
 .primary-navbar.about {
-background-color: #d3d3d3;
+  background-color: #d3d3d3;
 }
 
 @media (min-width: 768px) {
@@ -93,7 +93,7 @@ background-color: #d3d3d3;
 
   .primary-navbar.about {
     background-color: #fff;
-    }
+  }
 }
 
 .logo {
